@@ -12,13 +12,17 @@ using namespace std;
 
 class DarboPasiulymas {
 public:
-  DarboPasiulymas(const string &pavadinimas, const string &salygos, int alga);
+  DarboPasiulymas(const string &pavadinimas, const string &salygos, int alga, int id);
   const string &GetPavadinimas() const;
   const string &GetSalygos() const;
   int GetAlga() const;
+
+  int GetId() const;
+
   void Informacija();
 
 private:
+  int id;
   string pavadinimas;
   string salygos;
   int alga;

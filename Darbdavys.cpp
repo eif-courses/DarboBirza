@@ -29,7 +29,7 @@ void Darbdavys::IdetiDarboSkelbima(AptarnaujantisPersonalas aptarnaujantisPerson
 
   cout << " alga: " << alga << ", " << pavadinimas << ", " << salygos << endl;
 
-  DarboPasiulymas skelbimas(pavadinimas, salygos, alga);
+  DarboPasiulymas skelbimas(pavadinimas, salygos, alga, 0);
 
   aptarnaujantisPersonalas.IdetiSkelbima(skelbimas);
 }

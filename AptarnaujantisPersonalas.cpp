@@ -9,7 +9,7 @@ AptarnaujantisPersonalas::AptarnaujantisPersonalas(const string &vardas, const s
     : Darbuotojas(vardas, pavarde, amzius), darboBirza(darboBirza) {}
 
 void AptarnaujantisPersonalas::IdetiSkelbima(DarboPasiulymas darboPasiulymas) {
-  if(darboPasiulymas.GetAlga() <= 400 || darboPasiulymas.GetPavadinimas() == "" || darboPasiulymas.GetSalygos() ==""){
+  if(darboPasiulymas.GetAlga() <= 0 || darboPasiulymas.GetPavadinimas() == "" || darboPasiulymas.GetSalygos() ==""){
     cout << "Jūsų skelbimas yra netinkamas prašome užpildyti visus laukus!" << endl;
   }else{
     darboBirza.IdetiNaujaPasiulyma(darboPasiulymas);

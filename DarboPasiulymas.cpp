@@ -4,9 +4,10 @@
 
 #include "DarboPasiulymas.h"
 
-DarboPasiulymas::DarboPasiulymas(const string &pavadinimas, const string &salygos, int alga) : pavadinimas(pavadinimas),
-                                                                                               salygos(salygos),
-                                                                                               alga(alga) {}
+DarboPasiulymas::DarboPasiulymas(const string &pavadinimas, const string &salygos, int alga, int id)
+    : pavadinimas(pavadinimas),
+      salygos(salygos),
+      alga(alga), id(id) {}
 
 const string &DarboPasiulymas::GetPavadinimas() const {
   return pavadinimas;
@@ -26,4 +27,8 @@ void DarboPasiulymas::Informacija() {
   cout << "SALYGOS: " << salygos << endl;
   cout << "ALGA: " << alga << endl;
   cout << "-----------------------------------------" << endl;
+}
+
+int DarboPasiulymas::GetId() const {
+  return id;
 }

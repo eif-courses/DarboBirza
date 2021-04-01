@@ -5,7 +5,21 @@
 #include "DarboBirza.h"
 #include <ctime>
 #include <windows.h>
+
+
+
+
+
+
 int main() {
+
+  // DUOMENU BAZE (Atsisiųsti)
+  // https://www.sqlite.org/download.html
+
+  // PAMOKOS SU DUOMENU BAZE
+  // https://www.tutorialspoint.com/sqlite/sqlite_c_cpp.htm
+
+
   srand(time(NULL));
   SetConsoleOutputCP(CP_UTF8);
   DarboBirza darboBirza;
